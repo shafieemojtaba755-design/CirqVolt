@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 260" role="img" aria-labelledby="t d">
+<title id="t">CirqVolt</title><desc id="d">CirqVolt engineering toolkit logo with circuit-inspired lightning emblem</desc>
+<defs>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eafaff"/><stop offset=".48" stop-color="#48baff"/><stop offset="1" stop-color="#17d8e7"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="920" height="260" rx="26" fill="#081426"/>
+<g transform="translate(34 23)">
+ <circle cx="104" cy="104" r="91" fill="none" stroke="#1c91c9" stroke-width="5"/>
+ <circle cx="104" cy="104" r="75" fill="none" stroke="#1c91c9" stroke-width="1.5" opacity=".55"/>
+ <path d="M104 4v22m0 156v22M4 104h22m156 0h22M34 34l16 16m108 108 16 16m0-140-16 16M50 158l-16 16" stroke="#23c9e5" stroke-width="5" stroke-linecap="round"/>
+ <path d="M119 20 61 113h42l-8 79 69-111h-47z" fill="url(#blue)" stroke="#d8fbff" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
+ <circle cx="104" cy="104" r="5" fill="#fff"/>
+</g>
+<text x="285" y="133" font-family="Arial,sans-serif" font-size="93" font-weight="800" letter-spacing="-3" fill="#eaf5ff">Cirq<tspan fill="url(#blue)">Volt</tspan></text>
+<path d="M290 164h550" stroke="#1a668f" stroke-width="2"/>
+<text x="292" y="205" font-family="Arial,sans-serif" font-size="25" font-weight="600" letter-spacing="6" fill="#8fb8d3">ENGINEERING TOOLKIT</text>
+</svg>
