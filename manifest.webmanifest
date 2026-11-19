@@ -1,0 +1,26 @@
+{
+  "name": "CirqVolt | ابزار مهندسی برق",
+  "short_name": "CirqVolt",
+  "description": "نسخه ۶؛ محاسبات مهندسی، دانشنامه و نقشه مدارهای قدرت و فرمان آفلاین",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#081426",
+  "theme_color": "#071426",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

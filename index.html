@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="CirqVolt؛ جعبه‌ابزار مهندسی برق و اتوماسیون صنعتی، قابل استفاده آفلاین">
+  <title>CirqVolt | ابزار مهندسی برق</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="home" aria-label="صفحه اصلی CirqVolt">
+        <img src="./assets/icon.svg" alt="" class="brand-mark">
+        <span><b>CirqVolt</b><small>ENGINEERING TOOLKIT</small></span>
+      </a>
+      <div class="side-label">محیط کار</div>
+      <nav class="nav">
+        <button class="nav-item active" data-page="home"><span>⌂</span> نمای کلی</button>
+        <button class="nav-item" data-page="calculators"><span>∑</span> محاسبات مهندسی</button>
+        <button class="nav-item" data-page="library"><span>▤</span> دانشنامه تجهیزات</button>
+        <button class="nav-item" data-page="circuits"><span>⌁</span> مدارها</button>
+        <button class="nav-item" data-page="history"><span>◷</span> تاریخچه و پشتیبان</button>
+        <button class="nav-item" data-page="about"><span>ⓘ</span> درباره برنامه</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="offline-pill"><i></i><span>آماده استفاده آفلاین</span></div>
+        <small>نسخه ۶.۰.۰ · CirqVolt</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn" aria-label="باز کردن منو">☰</button>
+        <div class="breadcrumb"><span>فضای کاری</span><b>/</b><strong id="pageTitle">نمای کلی</strong></div>
+        <div class="top-actions">
+          <span class="status"><i></i> محلی و آفلاین</span>
+          <button class="icon-btn" id="themeBtn" title="تغییر تم" aria-label="تغییر تم">◐</button>
+        </div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="welcome">
+          <div>
+            <div class="eyebrow">INDUSTRIAL ENGINEERING TOOLKIT</div>
+            <h1>سلام، به <span>CirqVolt</span> خوش آمدی</h1>
+            <p>ابزارهای محاسباتی گسترده، مرجع تجهیزات برق و اتوماسیون؛ همیشه در دسترس، حتی بدون اینترنت.</p>
+            <button class="primary-btn" data-go="calculators">شروع محاسبه <b>←</b></button>
+          </div>
+          <div class="welcome-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="bolt">ϟ</div><span>ENGINEER<br>WITH CONFIDENCE</span></div>
+        </div>
+
+        <div class="section-head"><div><h2>ابزارهای پرکاربرد</h2><p>برای شروع، یکی از ابزارها را انتخاب کن.</p></div><button class="text-btn" data-go="calculators">همه ابزارها ←</button></div>
+        <div class="tool-grid">
+          <button class="tool-card" data-tool="ohm"><span class="tool-icon blue">Ω</span><b>قانون اهم</b><small>ولتاژ، جریان و مقاومت</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="power1"><span class="tool-icon violet">ϟ</span><b>توان تک‌فاز</b><small>توان و جریان AC</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="power3"><span class="tool-icon cyan">∿</span><b>توان سه‌فاز</b><small>محاسبه جریان خط</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="resistor"><span class="tool-icon orange">▥</span><b>مقاومت‌ها</b><small>اتصال سری و موازی</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="capacitor"><span class="tool-icon pink">ϟ</span><b>اصلاح ضریب توان</b><small>برآورد توان خازنی</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="energy"><span class="tool-icon green">◷</span><b>مصرف انرژی</b><small>برآورد مصرف و هزینه</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="transformer"><span class="tool-icon orange">⌁</span><b>جریان ترانسفورماتور</b><small>جریان نامی تک‌فاز و سه‌فاز</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="kva"><span class="tool-icon violet">S</span><b>تبدیل توان‌ها</b><small>kW، kVA، kVAr و PF</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="speed"><span class="tool-icon cyan">↻</span><b>سرعت و لغزش موتور</b><small>سرعت سنکرون و واقعی</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="signal"><span class="tool-icon pink">∿</span><b>مقیاس سیگنال آنالوگ</b><small>4–20mA و 0–10V</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="thermocouple"><span class="tool-icon green">℃</span><b>مبدل ترموکوپل</b><small>دما و میلی‌ولت با جبران اتصال سرد</small><span class="card-arrow">↗</span></button>
+          <button class="tool-card" data-tool="control"><span class="tool-icon orange">⌘</span><b>طراح مفهومی مدار فرمان</b><small>DOL، چپ‌گرد/راست‌گرد و ستاره-مثلث</small><span class="card-arrow">↗</span></button>
+        </div>
+
+        <div class="bottom-grid">
+          <div class="panel">
+            <div class="panel-head"><div><h3>دسترسی سریع</h3><p>محاسبات پرکاربرد برق صنعتی</p></div><span class="mini-tag">V5</span></div>
+            <div class="quick-list">
+              <button data-tool="voltage"><span class="quick-symbol">↯</span><span><b>افت ولتاژ کابل</b><small>جنس هادی، سطح مقطع، دما و ضریب توان</small></span><em>←</em></button>
+              <button data-tool="motor"><span class="quick-symbol">◉</span><span><b>جریان موتور</b><small>تک‌فاز و سه‌فاز</small></span><em>←</em></button>
+              <button data-go="library"><span class="quick-symbol">▤</span><span><b>دانشنامه تجهیزات</b><small>مرجع سنسورها، PLC، حفاظت، کابل و تجهیزات</small></span><em>←</em></button>
+              <button data-go="circuits"><span class="quick-symbol">⌁</span><span><b>مدارهای قدرت و فرمان</b><small>ستاره-مثلث، چپ‌گرد/راست‌گرد و راه‌اندازی مستقیم</small></span><em>←</em></button>
+            </div>
+          </div>
+          <div class="panel note-panel">
+            <div class="note-icon">i</div><h3>یادآوری مهندسی</h3>
+            <p>نتایج این نسخه برای آموزش و برآورد اولیه هستند. انتخاب کابل، حفاظت، تجهیزات و اجرای مدار باید با استاندارد معتبر، شرایط واقعی نصب و بررسی متخصص واجد صلاحیت تأیید شود.</p>
+            <span class="note-foot">دقت، ایمنی و مستندسازی در اولویت‌اند.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-calculators">
+        <div class="page-intro"><div class="eyebrow">CALCULATION CENTER</div><h1>محاسبات مهندسی</h1><p>ابزار موردنظر را انتخاب کن و مقادیر را وارد کن.</p></div>
+        <div class="search-wrap"><span>⌕</span><input id="toolSearch" type="search" placeholder="جست‌وجوی ابزار محاسباتی..." autocomplete="off"></div>
+        <div class="tool-grid full-grid" id="allTools" aria-live="polite"></div>
+      </section>
+
+      <section class="page" id="page-library">
+        <div class="page-intro"><div class="eyebrow">TECHNICAL KNOWLEDGE</div><h1>دانشنامه تجهیزات</h1><p>مرجع آفلاین تجهیزات قدرت، حفاظت، سنسورها، ابزار دقیق، PLC، درایوها، کابل‌ها و مفاهیم مهندسی.</p></div>
+        <div class="search-wrap"><span>⌕</span><input id="librarySearch" type="search" placeholder="جست‌وجوی مفهوم یا تجهیز..." autocomplete="off"></div>
+        <div class="knowledge-grid" id="knowledgeGrid"></div>
+      </section>
+
+      <section class="page" id="page-circuits">
+        <div class="page-intro"><div class="eyebrow">POWER & CONTROL SCHEMATICS</div><h1>مدارهای کاربردی برق صنعتی</h1><p>نقشه‌های آموزشی مدار قدرت و فرمان، توالی عملکرد، اجزا و نکات کنترلی را مرور کن.</p></div>
+        <div class="search-wrap"><span>⌕</span><input id="circuitSearch" type="search" placeholder="جست‌وجوی مدار؛ ستاره مثلث، چپ‌گرد راست‌گرد..." autocomplete="off"></div>
+        <div class="circuit-grid" id="circuitGrid"></div>
+        <div class="panel circuit-safety"><b>نکته ایمنی مهم</b><p>این نقشه‌ها برای آموزش منطق و شناخت اجزا هستند، نه دستور سیم‌بندی مستقیم. ولتاژهای صنعتی می‌توانند مرگبار باشند. طراحی اجرایی، شماره ترمینال‌ها، سطح مقطع، حفاظت، اینترلاک و آزمون باید بر اساس نقشه سازنده، استاندارد محل و توسط فرد متخصص انجام شود. پیش از هر کار، ایزوله‌سازی و بی‌برق‌بودن مدار باید طبق روش ایمن تأیید شود.</p></div>
+      </section>
+
+      <section class="page" id="page-history">
+        <div class="page-intro row-intro"><div><div class="eyebrow">LOCAL RECORDS</div><h1>تاریخچه و پشتیبان</h1><p>اطلاعات روی همین دستگاه ذخیره می‌شوند؛ برای جلوگیری از ازدست‌رفتن، نسخه پشتیبان بگیر.</p></div><div class="backup-actions"><button class="secondary-btn" id="exportBackup">خروجی پشتیبان</button><button class="secondary-btn" id="importBackup">بازیابی</button><input id="backupFile" type="file" accept="application/json,.json" hidden><button class="danger-btn" id="clearHistory">پاک کردن</button></div></div>
+        <div class="panel history-panel" id="historyList"></div>
+      </section>
+
+      <section class="page" id="page-about">
+        <div class="page-intro"><div class="eyebrow">ABOUT CIRQVOLT</div><h1>درباره CirqVolt</h1><p>جعبه‌ابزار مهندسی برق و اتوماسیون صنعتی</p></div>
+        <div class="about-layout">
+          <div class="panel about-brand"><img src="./assets/brand-logo.svg" alt="نشان CirqVolt"><h2>CirqVolt</h2><p>ENGINEERING TOOLKIT</p><span class="version-chip">نسخه ۶.۰.۰</span></div>
+          <div class="panel about-copy"><h3>ساخته‌شده برای محاسبه و یادگیری</h3><p>CirqVolt یک ابزار مستقل و آفلاین برای انجام برخی محاسبات پایه برق، نگهداری تاریخچه و مرور مفاهیم فنی است.</p><h3>حریم خصوصی</h3><p>در این نسخه، داده‌های محاسباتی در حافظه محلی مرورگر ذخیره می‌شوند و به سرور ارسال نمی‌شوند. امکان خروجی گرفتن و بازیابی فایل پشتیبان نیز اضافه شده است.</p><h3>محدودیت‌های فنی و ایمنی</h3><p>خروجی‌ها جایگزین طراحی مهندسی، استانداردهای ملی و بین‌المللی، دیتاشیت سازنده یا تأیید متخصص نیستند. ضرایب و فرضیات هر محاسبه باید پیش از استفاده عملی بررسی شوند.</p></div>
+        </div>
+      </section>
+
+      <footer class="footer"><span>© 2026 CirqVolt</span><span>ساخته‌شده برای مهندسی دقیق‌تر</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="calc-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head"><div><div class="eyebrow">ENGINEERING CALCULATOR</div><h2 id="modalTitle">محاسبه</h2></div><button class="close-btn" id="closeModal" aria-label="بستن">×</button></div>
+      <div id="calcBody"></div>
+      <div class="modal-foot"><span>نتیجه فقط برای برآورد و آموزش است.</span><button class="secondary-btn" id="resetCalc">پاک کردن ورودی‌ها</button></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
